@@ -58,9 +58,9 @@ class ContentController extends AbstractController
         ];
 
         // Create a new offer document and switch the status from draft to finalized
-        $draft = new Draft(Document::TYPE_OFFER,Document::STATUS_DRAFT, [
+        $draft = new Draft(Document::TYPE_OFFER_VARIANT,Document::STATUS_DRAFT, [
             'cart' => new Cart($cart),
-            'customer' => new Customer(Customer::TYPE_REGULAR_CUSTOMER ,CustomerData::getOrCreate()),
+            'customer' => new Customer(Customer::TYPE_ARCHITECT ,CustomerData::getOrCreate()),
             'creator-type' => CreatorType::TYPE_REPRESENTATIVE,
             'creation-date' => Carbon::now()->format('d/m/Y H:i')
         ]);

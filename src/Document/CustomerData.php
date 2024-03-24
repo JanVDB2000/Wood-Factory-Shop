@@ -7,10 +7,16 @@ class CustomerData
     public static function getOrCreate($id = null): array
     {
         return [
+            'info_card'=>[
+                'id_customer' => 15420,
+                'type_customer' => Customer::TYPE_REGULAR_CUSTOMER,
+                'ids_representatives' => [33,125],
+                'last_user_edited_this'=> 33,
+            ],
             'name' => 'John Doe',
             'email' => 'john@example.com',
             "companyName" => "Wood NV",
-            "industry" => "Furniture",
+            "industry" => "Furniture Factory",
             "phone_1" => "+1234567890",
             "phone_2" => "+1234567890",
             "fax" => "+1234567890",
@@ -64,7 +70,5 @@ class CustomerData
             "customer_segment" => "High-Value",
             "marketing_opt_in" => true
         ];
-
     }
-
 }
