@@ -57,8 +57,8 @@ class ContentController extends AbstractController
             ],
         ];
 
-        // Create a new offer document and switch the status from draft to finalized
-        $draft = new Draft(Document::TYPE_OFFER_VARIANT,Document::STATUS_DRAFT, [
+        // Create a new quote document and switch the status from draft to finalized
+        $draft = new Draft(Document::TYPE_QUOTE_VARIANT,Document::STATUS_DRAFT, [
             'cart' => new Cart($cart),
             'customer' => new Customer(Customer::TYPE_ARCHITECT ,CustomerData::getOrCreate()),
             'creator-type' => CreatorType::TYPE_REPRESENTATIVE,

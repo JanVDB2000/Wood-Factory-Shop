@@ -12,8 +12,8 @@ class Document {
     const STATUS_FINALIZED = 'finalized';
 
     const TYPE_CART = 'cart';
-    const TYPE_OFFER = 'offer';
-    const TYPE_OFFER_VARIANT = 'offer_variant';
+    const TYPE_QUOTE = 'quote';
+    const TYPE_QUOTE_VARIANT = 'quote_variant';
     const TYPE_ORDER = 'order';
     public function __construct($type = self::TYPE_CART, $status = self::STATUS_DRAFT, $content = array()) {
         $this->type = $type;
